@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Main Topic -->
+    <!-- <header>
+        <h1>TravelBloom</h1>
+    </header> -->
+
+    <!-- Introduction Section -->
+    <section id="home-introduction">
+        <h2>Welcome to TravelBloom</h2>
+        <p>
+            Discover your next adventure with TravelBloom. Explore breathtaking destinations, immerse yourself in diverse cultures, and create unforgettable memories. Whether you're seeking a relaxing beach getaway, a cultural journey to ancient temples, or an exhilarating experience in a new country, we have the perfect recommendations to make your travel dreams come true.
+        </p>
+        
+    </section>
+
+    <!-- Search Bar -->
+    <section id="search-section">
+        <a href="#recommendations" class="button">Book Now</a>
+        <label for="search">Explore by Category:</label>
+        <select id="search" onchange="filterCategory()">
+            <option value="all">All</option>
+            <option value="beach">Beach</option>
+            <option value="temple">Temple</option>
+            <option value="country">Country</option>
+        </select>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations">
+
+        <!-- Beach Recommendations -->
+        <div class="category" id="beach-category">
+            <h3>Beach </h3>
+            <div class="image-grid">
+                <img src="images/beach1.jpg" alt="Beach 1">
+                <img src="images/beach2.jpg" alt="Beach 2">
+            </div>
+            <!-- <div class="image-grid">
+                <img src="images/beach3.jpg" alt="Beach 3">
+                <img src="images/beach4.jpg" alt="Beach 4">
+            </div> -->
+        </div>
+
+        <!-- Temple Recommendations -->
+        <div class="category" id="temple-category">
+            <h3>Temple </h3>
+            <div class="image-grid">
+                <img src="images/temple1.jpg" alt="Temple 1">
+                <img src="images/temple2.jpg" alt="Temple 2">
+            </div>
+            <!-- <div class="image-grid">
+                <img src="images/temple3.jpg" alt="Temple 3">
+                <img src="images/temple4.jpg" alt="Temple 4">
+            </div> -->
+        </div>
+
+        <!-- Country Recommendations -->
+        <div class="category" id="country-category">
+            <h3>Country </h3>
+            <div class="image-grid">
+                <img src="images/country1.jpeg" alt="Country 1">
+                <img src="images/country 2.avif" alt="Country 2">
+            </div>
+            <!-- <div class="image-grid">
+                <img src="images/country3.jpg" alt="Country 3">
+                <img src="images/country4.jpg" alt="Country 4">
+            </div> -->
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
